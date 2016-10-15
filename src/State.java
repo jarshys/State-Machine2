@@ -10,7 +10,7 @@ public State(String name)
 	this.name = name;
 
 }
-public void addTransition(Integer i, State recoveryid) {
-	this.transitions.put(i, recoveryid);
+public void addTransition(Integer i, State nextstate) { //event 'i' => takes system to State 'nextstate'
+	this.transitions.put(i, nextstate);
 }
 }
